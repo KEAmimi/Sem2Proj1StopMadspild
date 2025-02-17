@@ -4,6 +4,14 @@
     --darkGreen: #255957;
     --red: #E44D2E;
     /* Vars are refered to with var(--name) */
+
+    /* Regarding text */
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 25px;
+    color: var(--lightGreen);
+
+    background-color: var(--lightGreen);
 }
 
 header {
@@ -16,7 +24,7 @@ header {
 /* The login box */
 form {
     position: absolute;
-    right: 50px;
+    right: 75px;
     top: 150px;
 
     width: fit-content;
@@ -24,9 +32,6 @@ form {
 
     border-radius: 15px;
     background-color: var(--darkGreen);
-    font-family: fantasy;
-    font-weight: bolder;
-    color: var(--lightGreen);
     line-height: 2;
     padding: 15px;
 }
@@ -41,4 +46,20 @@ input {
     font-weight: bolder;
     padding: 0 10px;
     color: var(--darkGreen);
+}
+
+p {
+    position: absolute;
+    left: 150px;
+    top: 100px;
+
+    border-radius: 15px;
+    background-color: var(--red);
+    width: 280px;
+    min-height: 100vh;
+
+    font-size: 50px;
+    line-height: 1.2;
+
+    padding: 20px;
 }
