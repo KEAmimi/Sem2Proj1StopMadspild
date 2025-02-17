@@ -1,0 +1,11 @@
+
+:root {
+    /* Defining the color as vars for easy acces */
+    --lightGreen: #F0FFF0;
+    --darkGreen: #255957;
+    --red: #E44D2E;
+    /* Vars are refered to with var(--name) */
+}
+
+.header {
+}
