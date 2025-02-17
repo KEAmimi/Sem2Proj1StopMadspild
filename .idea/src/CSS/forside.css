@@ -1,0 +1,44 @@
+:root {
+    /* Defining the color as vars for easy acces */
+    --lightGreen: #F0FFF0;
+    --darkGreen: #255957;
+    --red: #E44D2E;
+    /* Vars are refered to with var(--name) */
+}
+
+header {
+    background-color: var(--darkGreen);
+    position: fixed; /* The header stays in place*/
+    top: 0; /* The header is placed in the top */
+    width: 100%; /* The header goes all the way from left to right */
+}
+
+/* The login box */
+form {
+    position: absolute;
+    right: 50px;
+    top: 150px;
+
+    width: fit-content;
+    height: 100px;
+
+    border-radius: 15px;
+    background-color: var(--darkGreen);
+    font-family: fantasy;
+    font-weight: bolder;
+    color: var(--lightGreen);
+    line-height: 2;
+    padding: 15px;
+}
+
+/* Input fields */
+input {
+    width: 120px;
+
+    border-radius: 9px;
+    background-color: var(--lightGreen);
+    font-family: fantasy;
+    font-weight: bolder;
+    padding: 0 10px;
+    color: var(--darkGreen);
+}
