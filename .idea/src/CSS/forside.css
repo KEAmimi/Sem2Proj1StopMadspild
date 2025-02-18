@@ -13,39 +13,51 @@
     color: var(--lightGreen);
 
 }
+html body {
+    /* Prevents scrolling */
+    overflow: hidden;
+}
 
 body {
     background-color: var(--lightGreen);
     background-image: url("../img/becca-tapert-O7sK3d3TPWQ-unsplash.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-header {
-    background-color: var(--darkGreen);
-    position: fixed; /* The header stays in place*/
-    top: 0; /* The header is placed in the top */
-    width: 100%; /* The header goes all the way from left to right */
 }
 
 /* The login box */
 form {
     position: absolute;
     right: 175px;
-    top: 150px;
+    top: 450px;
 
     font-size: calc(25px * var(--sizeScale));
 
     width: 325px;
-    height: calc(100px * var(--sizeScale));
+    height: 100vh;
 
-    border-radius: 15px;
-    background-color: rgb(var(--darkGreen), 0.8);
+    /* height: calc(100px * var(--sizeScale)); */
+
+    border-radius: 15px 15px 0 0;
     line-height: 2;
-    padding: 15px;
+    padding: 25px;
 
     transition: box-shadow 0.3s ease;
+}
+
+form::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    border-radius: 15px 15px 0 0;
+    background-color: var(--darkGreen);
+    opacity: 50%;
+    z-index: -1;
 }
 
 form:hover {
@@ -55,7 +67,6 @@ form:hover {
 /* Input fields */
 input {
     width: calc(120px * var(--sizeScale));
-
     font-size: calc(20px * var(--sizeScale));
 
     border-radius: calc(9px * var(--sizeScale));
@@ -69,25 +80,33 @@ input {
 /* Welcome text */
 p {
     position: absolute;
-    left: 300px;
+    left: 125px;
     top: 100px;
 
     /* Only applies to the top corners */
     border-radius: 15px 15px 0 0;
-    background-color: var(--red);
-    width: 280px;
+    width: auto;
     min-height: 100vh;
 
-    font-size: 50px;
+    font-size: 45px;
     line-height: 1.2;
 
-    padding: 20px 40px;
+    padding: 20px;
 
     transition: box-shadow 0.3s ease;
 }
 
-p:hover {
-    box-shadow: 0 0 50px 20px var(--darkGreen);
+p::before {
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 375px;
+    height: 100vh;
+    border-radius: 15px;
+    background-color: var(--red);
+    opacity: 50%;
+    z-index: -1;
 }
 
 #submit {
@@ -95,7 +114,8 @@ p:hover {
     background-color: var(--red);
     position: absolute;
     right: 100px;
-    top: 135px;
+    top: 150px;
+    padding: 5px 10px;
 
     box-shadow: 0 0 50px 0 var(--darkGreen);
     transition: box-shadow 0.3s ease;
