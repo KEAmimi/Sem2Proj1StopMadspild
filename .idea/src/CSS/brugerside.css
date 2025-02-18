@@ -35,3 +35,9 @@ li a:hover {
     overflow-x: hidden;
     padding-top: 20px;
 }
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
