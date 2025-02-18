@@ -44,6 +44,12 @@ form {
     background-color: var(--darkGreen);
     line-height: 2;
     padding: 15px;
+
+    transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+    box-shadow: 0 0 50px 20px var(--red);
 }
 
 /* Input fields */
@@ -76,11 +82,24 @@ p {
     line-height: 1.2;
 
     padding: 20px 40px;
+
+    transition: box-shadow 0.3s ease;
+}
+
+p:hover {
+    box-shadow: 0 0 50px 20px var(--darkGreen);
 }
 
 /* When viewport becomes 1200px or smaller i width the following applies */
 @media (max-width: 1400px){
     p {
         left: calc(100vw - 1100px);
+    }
+}
+
+@media (max-width: 545px){
+    form {
+        position: fixed;
+        right: auto;
     }
 }
