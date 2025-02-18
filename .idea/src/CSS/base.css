@@ -59,10 +59,6 @@ header {
     background-color: rgb(027, 121, 057);
 }
 
-.header-center {
-    float: inherit;
-}
-
 /* Float the link section to the right */
 .header-right {
     float: right;
