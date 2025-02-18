@@ -2,13 +2,17 @@
 :root {
     /* Defining the color as vars for easy acces */
     --lightGreen: #F0FFF0;
-    --darkGreen: #255957;
+    --darkGreen: rgb(092, 174, 099);
     --red: #E44D2E;
     /* Vars are refered to with var(--name) */
 }
 
+body {
+    font-family: Arial;
+}
+
 header {
-    background-color: rgb(092, 174, 099);
+    background-color: var(--darkGreen);
     position: fixed; /* The header stays in place*/
     top: 0; /* The header is placed in the top */
     width: 100%; /* The header goes all the way from left to right */

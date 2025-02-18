@@ -1,15 +1,14 @@
 :root {
     /* Defining the color as vars for easy acces */
     --lightGreen: #F0FFF0;
-    --darkGreen: #255957;
+    --darkGreen: rgb(092, 174, 099);
     --red: #E44D2E;
     /* Vars are refered to with var(--name) */
 
     --sizeScale: 1.2;
 
     /* Regarding text */
-    font-family: fantasy;
-    font-weight: bolder;
+    font-family: Arial;
     font-size: 25px;
     color: var(--lightGreen);
 
@@ -54,8 +53,7 @@ input {
 
     border-radius: calc(9px * var(--sizeScale));
     background-color: var(--lightGreen);
-    font-family: fantasy;
-    font-weight: bolder;
+    font-family: Arial;
     padding: 0 10px;
     color: var(--darkGreen);
 }
