@@ -5,6 +5,8 @@
     --red: #E44D2E;
     /* Vars are refered to with var(--name) */
 
+    --sizeScale: 1.2;
+
     /* Regarding text */
     font-family: fantasy;
     font-weight: bolder;
@@ -30,11 +32,13 @@ header {
 /* The login box */
 form {
     position: absolute;
-    right: 75px;
+    right: 175px;
     top: 150px;
 
+    font-size: calc(25px * var(--sizeScale));
+
     width: fit-content;
-    height: 100px;
+    height: calc(100px * var(--sizeScale));
 
     border-radius: 15px;
     background-color: var(--darkGreen);
@@ -44,9 +48,11 @@ form {
 
 /* Input fields */
 input {
-    width: 120px;
+    width: calc(120px * var(--sizeScale));
 
-    border-radius: 9px;
+    font-size: calc(20px * var(--sizeScale));
+
+    border-radius: calc(9px * var(--sizeScale));
     background-color: var(--lightGreen);
     font-family: fantasy;
     font-weight: bolder;
@@ -73,8 +79,8 @@ p {
 }
 
 /* When viewport becomes 1200px or smaller i width the following applies */
-@media (max-width: 1200px){
+@media (max-width: 1400px){
     p {
-        left: calc(100vw - 900px);
+        left: calc(100vw - 1100px);
     }
 }
