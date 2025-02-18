@@ -5,9 +5,16 @@
     --darkGreen: rgb(092, 174, 099);
     --red: #E44D2E;
     /* Vars are refered to with var(--name) */
+
+    /* Regarding text */
+    font-family: Arial;
+    color: var(--lightGreen);
 }
 
 body {
+    background-image: linear-gradient(var(--darkGreen),var(--lightGreen));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: Arial;
 }
 
