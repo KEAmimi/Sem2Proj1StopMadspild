@@ -30,4 +30,24 @@
     position: absolute;
     right: 175px;
     top: 70px;
+
+    .koleskab-container {
+        display: flex;
+        justify-content: space-between; /* Ensures columns are separated */
+        padding: 10px 20px;
+    }
+
+    /* Style for the Vare (Items) column */
+    .vare-column {
+        width: 60%; /* Adjust width to fit content */
+    }
+
+    /* Style for the Expiration Date column */
+    .udlobsdato-column {
+        width: 40%;
+        text-align: right; /* Aligns expiration dates to the right */
+    }
+}
+.tilfoj {
+
 }
