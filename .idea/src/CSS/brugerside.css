@@ -12,14 +12,14 @@
     padding-top: 20px;
 }
 .left {
-    left: 0;
+    left: 20px;
     width: 500px;
     height: 450px;
     border-radius: 15px;
     background-color: var(--darkGreen);
     position: absolute;
     right: 175px;
-    top: 70px;
+    top: 90px;
 }
 .right {
     right: 0;
@@ -29,7 +29,7 @@
     background-color: rgb(092, 174, 099);
     position: absolute;
     right: 175px;
-    top: 70px;
+    top: 90px;
 
     .koleskab-container {
         display: flex;
