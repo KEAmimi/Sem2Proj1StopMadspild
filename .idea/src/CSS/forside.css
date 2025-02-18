@@ -1,4 +1,10 @@
 :root {
+    /* Defining the color as vars for easy acces */
+    --lightGreen: #F0FFF0;
+    --darkGreen: rgb(092, 174, 099);
+    --red: #E44D2E;
+    /* Vars are refered to with var(--name) */
+
     --sizeScale: 1.2;
 
     /* Regarding text */
@@ -9,6 +15,11 @@
 }
 
 body {
+    background-color: var(--lightGreen);
+    background-image: url("../img/becca-tapert-O7sK3d3TPWQ-unsplash.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
