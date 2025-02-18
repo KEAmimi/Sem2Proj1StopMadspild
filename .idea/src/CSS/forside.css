@@ -11,7 +11,13 @@
     font-size: 25px;
     color: var(--lightGreen);
 
+}
+
+body {
     background-color: var(--lightGreen);
+    background-image: linear-gradient(var(--darkGreen),var(--lightGreen));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
@@ -48,12 +54,14 @@ input {
     color: var(--darkGreen);
 }
 
+/* Welcome text */
 p {
     position: absolute;
-    left: 150px;
+    left: 300px;
     top: 100px;
 
-    border-radius: 15px;
+    /* Only applies to the top corners */
+    border-radius: 15px 15px 0 0;
     background-color: var(--red);
     width: 280px;
     min-height: 100vh;
@@ -61,5 +69,12 @@ p {
     font-size: 50px;
     line-height: 1.2;
 
-    padding: 20px;
+    padding: 20px 40px;
+}
+
+/* When viewport becomes 1200px or smaller i width the following applies */
+@media (max-width: 1200px){
+    p {
+        left: calc(100vw - 900px);
+    }
 }
