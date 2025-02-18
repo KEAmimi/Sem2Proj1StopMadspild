@@ -1,8 +1,8 @@
 :root {
     /* Defining the color as vars for easy acces */
-    --lightGreen: #F0FFF0;
+    --lightGreen: rgb(240, 255, 240);
     --darkGreen: rgb(092, 174, 099);
-    --red: #E44D2E;
+    --red: rgb(228, 77, 46);
     /* Vars are refered to with var(--name) */
 
     /* Regarding text */

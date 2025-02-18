@@ -37,11 +37,11 @@ form {
 
     font-size: calc(25px * var(--sizeScale));
 
-    width: fit-content;
+    width: 325px;
     height: calc(100px * var(--sizeScale));
 
     border-radius: 15px;
-    background-color: var(--darkGreen);
+    background-color: rgb(var(--darkGreen), 0.8);
     line-height: 2;
     padding: 15px;
 
@@ -88,6 +88,21 @@ p {
 
 p:hover {
     box-shadow: 0 0 50px 20px var(--darkGreen);
+}
+
+#submit {
+    border: none;
+    background-color: var(--red);
+    position: absolute;
+    right: 100px;
+    top: 135px;
+
+    box-shadow: 0 0 50px 0 var(--darkGreen);
+    transition: box-shadow 0.3s ease;
+}
+
+#submit:hover {
+    box-shadow: 0 0 50px 0 var(--lightGreen);
 }
 
 /* When viewport becomes 1200px or smaller i width the following applies */
