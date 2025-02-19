@@ -25,10 +25,14 @@ body {
 }
 .left {
     background-color: var(--darkGreen);
+    position: relative;
 
 }
 .right {
     background-color: rgb(92, 174, 99);
+}
+.splt.left{
+    position: relative;
 }
 
     .koleskab-container {
@@ -84,7 +88,7 @@ body {
     color: black;
 }
 .edit-profile-button {
-    background-color: #008CBA; /* Blue color */
+    background-color: #008CBA;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -93,7 +97,31 @@ body {
     cursor: pointer;
     transition: 0.3s;
 }
-
 .edit-profile-button:hover {
-    background-color: #005f7f; /* Darker blue on hover */
+    background-color: #005f7f;
+}
+.pb-container{
+    position: absolute;
+    top: 0vw;
+    right: -8vw;
+     width: 15vw;
+     height: 15vw;
+    display: flex;
+    padding-top: 3vw;
+    padding-right: 10vw;
+    justify-content: center;
+    align-items: center;
+ }
+#pb{
+    min-height: 50px;
+    min-width: 50px;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+Overskift-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
