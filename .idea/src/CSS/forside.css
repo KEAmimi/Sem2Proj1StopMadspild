@@ -19,12 +19,9 @@ html body {
 }
 
 body {
-    background-color: var(--lightGreen);
     background-image: url("../img/becca-tapert-O7sK3d3TPWQ-unsplash.jpg");
     background-position: bottom center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /* The login box */
@@ -129,8 +126,8 @@ p::before {
     background-color: #e4a278;
 }
 
-/* When viewport becomes 1200px or smaller i width the following applies */
-@media (max-width: 1400px){
+/* When viewport becomes 1200px or smaller in width the following applies */
+@media (max-width: 1225px){
     p {
         left: calc(100vw - 1100px);
     }
