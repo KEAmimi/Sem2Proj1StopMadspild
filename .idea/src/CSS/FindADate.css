@@ -9,6 +9,8 @@ body{
     gap: 0;
     position: relative;
     top: 80px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .topText{
@@ -86,7 +88,6 @@ body{
 
 /*Content inside mealBox*/
 .FoodImageAndTitle{
-
 }
 
 .mealIMG{
@@ -233,6 +234,9 @@ input[type="checkbox"] {
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
+    top: 30px;
+    margin-bottom: 50px;
 }
 
 .bottomButton a{
