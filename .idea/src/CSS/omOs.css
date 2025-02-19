@@ -1,8 +1,16 @@
-.omOs {
+/*Center elements alignment*/
+.infoBokse {
+    position: relative;
     display: flex;
-    position: absolute;
-    left: 2%; /*Placering fra venstre side*/
-    top: 10%; /*Placering fra toppen*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    gap: 100px;
+    top: 0px;
+}
+
+.omOs {
     background-color: white;
     color: black;
     font-size: larger;
@@ -11,6 +19,21 @@
     border-radius: 20px;
     flex-direction: column;
     padding: 1%;
+    align-items: center;
+    text-align: center;
+}
+
+.kontaktOs {
+    background-color: white;
+    color: black;
+    font-size: larger;
+    width: 35%;
+    height: 50%;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 1%;
+    align-items: center;
+    text-align: center;
 }
 
 .slogan {
