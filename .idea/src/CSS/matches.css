@@ -92,7 +92,7 @@ input:hover {
 
     font-size: 30px;
     font-weight: bold;
-    color: var(--red);
+    color: var(--darkGreen);
 
     padding: 30px;
 
@@ -118,10 +118,23 @@ input:hover {
     background-image: url("../Images/paperTexture.jpg");
     background-size: cover;
 
-    filter: brightness(95%) sepia(20%) contrast(120%);
+    filter: opacity(50%) sepia(20%);
 
     z-index: -3;
 }
+.shoppingList::after {
+    content:"";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 9px;
+
+    background-color: lightgoldenrodyellow;
+    z-index: -4;
+}
+
 .shoppingList:hover {
     transform: translateX(280px)rotate(0deg);
 }
