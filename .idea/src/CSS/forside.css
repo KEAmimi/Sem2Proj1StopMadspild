@@ -1,18 +1,11 @@
 :root {
-    /* Defining the color as vars for easy acces */
-    --lightGreen: #F0FFF0;
-    --darkGreen: rgb(092, 174, 099);
-    --red: #E44D2E;
-    /* Vars are refered to with var(--name) */
-
+    /* Var for sizing multiple elements */
     --sizeScale: 1.2;
 
     /* Regarding text */
-    font-family: Arial;
     font-size: 25px;
-    color: var(--lightGreen);
-
 }
+
 html body {
     /* Prevents scrolling */
     overflow: hidden;
@@ -20,6 +13,7 @@ html body {
 
 body {
     background-image: url("../Images/becca-tapert-O7sK3d3TPWQ-unsplash.jpg");
+    /* img-bottom is the bottom of the page */
     background-position: bottom center;
     background-size: cover;
 }
@@ -35,19 +29,19 @@ form {
     width: 325px;
     height: 100vh;
 
-    /* height: calc(100px * var(--sizeScale)); */
-
     border-radius: 15px 15px 0 0;
     line-height: 2;
     padding: 25px;
 
+    /* box-shadow fades in insted of being instantanious */
     transition: box-shadow 0.3s ease;
 }
-
-
+/* Before-pseudo element defines the box behind the text */
 form::before {
     content:"";
     position: absolute;
+
+    /* Before-element covers the parent-element */
     top: 0;
     left: 0;
     right: 0;
@@ -56,9 +50,10 @@ form::before {
     border-radius: 15px 15px 0 0;
     background-color: var(--darkGreen);
     opacity: 50%;
+
+    /* Places before element on layer -1 */
     z-index: -1;
 }
-
 form:hover {
     box-shadow: 0 0 50px 0px var(--lightGreen);
 }
@@ -93,7 +88,6 @@ p {
 
     padding: 20px;
 }
-
 p::before {
     content:"";
     position: absolute;
@@ -118,7 +112,6 @@ p::before {
 
     transition: background-color 0.3s ease;
 }
-
 #submit:hover {
     background-color: #e4a278;
 }
@@ -129,7 +122,6 @@ p::before {
         left: calc(100vw - 1100px);
     }
 }
-
 @media (max-width: 545px){
     form {
         position: fixed;
@@ -141,7 +133,6 @@ p::before {
     position: absolute;
     top: -110px;
     left: 115px;
-
 
     width: 100px;
     height: 100px;
