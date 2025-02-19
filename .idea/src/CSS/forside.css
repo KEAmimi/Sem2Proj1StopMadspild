@@ -87,14 +87,11 @@ p {
     /* Only applies to the top corners */
     border-radius: 15px 15px 0 0;
     width: auto;
-    min-height: 100vh;
 
     font-size: 45px;
     line-height: 1.2;
 
     padding: 20px;
-
-    transition: box-shadow 0.3s ease;
 }
 
 p::before {
@@ -102,9 +99,9 @@ p::before {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 375px;
-    height: 100vh;
-    border-radius: 15px;
+    bottom: 0;
+    top: -200px;
+    border-radius: 0 0 15px 15px;
     background-color: var(--red);
     opacity: 50%;
     z-index: -1;
