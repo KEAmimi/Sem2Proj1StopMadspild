@@ -6,14 +6,18 @@ body{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    height: 95vh;
+    gap: 0;
+    position: relative;
+    top: 80px;
 }
 
 .topText{
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 25px;
+    top: 10px;
+    height: 10vh;
+    min-height: 80px;
 }
 
 .AmountofMeals{
@@ -35,23 +39,25 @@ body{
     font-size: 15px;
 }
 
-/*Overall content alignment*/
+/*Center elements alignment*/
 .mealSuggestions{
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 650px;
+    height: 600px;
     gap: 100px;
-    top: -50px;
+    top: 0px;
 }
 
 /*Dish Element box*/
 .matchRetBox {
     /*Basic formatting*/
-    width: 20%;
-    height: 550px;
+    width: 25vw;
+    max-width: 325px;
+    height: 60vh;
+    min-height: 550px;
     background-color: white;
     border-radius: 500px;
 
@@ -79,6 +85,10 @@ body{
 
 
 /*Content inside mealBox*/
+.FoodImageAndTitle{
+
+}
+
 .mealIMG{
     aspect-ratio: 1/1;
     width: 90%;
@@ -119,7 +129,7 @@ body{
     margin-top: -45px;
 }
 
-/*Button interaction START*/
+/*Switch interaction START*/
 
 /*Create flex element to contain the button*/
 .buttonContainer{
@@ -141,8 +151,6 @@ body{
     border-radius: 100px;
     background-color: var(--darkGreen);
 }
-
-
 
 
 .toggleSwitch{
@@ -218,14 +226,13 @@ input[type="checkbox"] {
     display: none;
 }
 
-/*Button interaction END*/
 
+/*Switch interaction END*/
 .bottomButtonContainer{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: -40px;
 }
 
 .bottomButton a{
