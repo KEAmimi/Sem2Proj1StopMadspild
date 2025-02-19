@@ -110,7 +110,7 @@ p::before {
     top: 150px;
     padding: 5px 10px;
 
-    transition: background-color 0.3s ease;
+    transition: filter 0.3s ease;
 }
 #submit:hover {
     filter: saturate(50%);
