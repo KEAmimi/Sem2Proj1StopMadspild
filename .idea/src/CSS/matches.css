@@ -1,12 +1,6 @@
-:root {
-    /* vars for layout */
-    --sideVW: 800px;
-    --topVH: 15vh;
-    --widthVW: 500px;
-}
-
 .overall {
     display: flex;
+    justify-content: center;
 }
 
 .match {
@@ -20,6 +14,9 @@
     top: 15vh;
     width: 500px;
     padding: 20px;
+    padding-bottom: 40px;
+
+    color: var(--darkGreen);
 
     h1 {
         text-align: center;
@@ -31,23 +28,22 @@
         font-size: 35px;
         line-height: 150%;
     }
-
-
 }
 .match::before {
     content: "";
     position: absolute;
     top: 0;
-    bottom: 50px;
+    bottom: 0;
     right: 0;
     left: 0;
-    background-color: var(--darkGreen);
+
+    background-color: var(--lightGreen);
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
     border-radius: 25px;
 
-    box-shadow: 0 0 10px 0 var(--lightGreen);
+    box-shadow: 0 0 10px 0 var(--darkGreen);
 }
 
 .shoppingList {
@@ -58,9 +54,7 @@
 
     position: absolute;
     margin-top: 30px;
-    top: var(--topVH);
-    left: var(--sideVW);
-    width: var(--widthVW);
+    right: 0;
     padding: 20px;
 
     h1 {
@@ -95,7 +89,7 @@ input {
     position: relative;
     width: 150px;
     height: 50px;
-    top: 5vh;
+    bottom: 0;
 
     color: var(--lightGreen);
 
@@ -107,22 +101,17 @@ input {
 
     transition: filter 0.3s;
 }
-
 input:hover {
     filter: saturate(50%);
 }
 
-.submission {
-    position: absolute;
+.buttons {
     display: flex;
-    bottom: 10vh;
-    justify-content: center;
+    gap: 40px;
 }
-
 #accept {
     background-color: var(--darkGreen);
 }
-
 #decline {
     background-color: var(--red);
 }
