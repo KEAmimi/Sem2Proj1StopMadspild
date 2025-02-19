@@ -1,24 +1,26 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
+    height: 100vh;
 }
 .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100vw;
-    gap: 0px;
-    margin-top: 120px;
+    margin-top: 80px;
+    gap: 20px;
 }
 
 .split {
     display: flex;
     flex-direction: column; /* Sørger for, at indhold stables vertikalt */
-    width: 48%;
-    max-width: 500px;
-    height: 450px;
+    width: 50vw;
+    min-height: 80vh;
     border-radius: 15px;
-    padding: 50px;
+    padding: 5vw;
+    box-sizing: border-box;
 }
 .left {
     background-color: var(--darkGreen);
@@ -33,6 +35,9 @@ body {
         justify-content: space-between; /* Ensures columns are separated */
         padding: 10px 20px;
     }
+.split h1, .split h2, .split p {
+    margin: 0;
+}
 
     /* Style for the Vare (Items) column */
     .vare-column {
