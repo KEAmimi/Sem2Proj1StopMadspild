@@ -15,15 +15,76 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: Arial;
+    margin: 0;
 }
 
 .header {
-    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
     background-color: var(--darkGreen);
     position: fixed; /* The header stays in place*/
     top: 0; /* The header is placed in the top */
     width: 100%; /* The header goes all the way from left to right */
     z-index: 2;
+    margin: 0;
+}
+
+.leftLinksandLogo{
+    width: 33vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.findAftaleButton{
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.findAftaleButton .plusButtonContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+    height: 30px;
+}
+
+.findAftaleButton .plusButtonContainer .plusButton{
+    all:unset;
+    height: 28px;
+    width: 28px;
+    background-color: green;
+    border-radius: 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 2px white; /*This is the internal border on the button, do not be confused by the shadow property*/
+    top: 47px;
+    z-index: 3;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 20px;
+    transition: .2s;
+}
+
+.findAftaleButton .plusButtonContainer .plusButton:hover{
+    color: var(--darkGreen);
+    background-color: white;
+    transition: .2s;
+}
+
+
+.header-right{
+    width: 33vw;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Style the header links */
@@ -39,6 +100,8 @@ body {
     border-radius: 4px;
     align-items: center;
     display: flex;
+    transition: .2s;
+    cursor: pointer;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
@@ -51,6 +114,7 @@ body {
 /* Change the background color on mouse-over */
 .header a:hover {
     background-color: rgb(027, 121, 057);
+    transition: .2s;
 }
 
 /* Float the link section to the right */
@@ -65,8 +129,28 @@ body {
     align-items: center;
     margin-right: 10px;
     margin-left: 10px;
-
 }
+
+.menuSeperatorBar{
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    top: 60px;
+}
+
+/*
+.header::after{
+    content:"";
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 46px;
+}
+*/
+
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
