@@ -1,33 +1,32 @@
-
-
-
+body {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100vw;
+    gap: 0px;
+    margin-top: 120px;
+}
 
 .split {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+    display: flex;
+    flex-direction: column; /* Sørger for, at indhold stables vertikalt */
+    width: 48%;
+    max-width: 500px;
+    height: 450px;
+    border-radius: 15px;
+    padding: 50px;
 }
 .left {
-    left: 90px;
-    width: 500px;
-    height: 450px;
-    border-radius: 15px;
     background-color: var(--darkGreen);
-    position: absolute;
-    top: 90px;
+
 }
 .right {
-    right: 90px;
-    width: 500px;
-    height: 450px;
-    border-radius: 15px;
-    background-color: rgb(092, 174, 099);
-    position: absolute;
-    top: 90px;
+    background-color: rgb(92, 174, 99);
+}
 
     .koleskab-container {
         display: flex;
@@ -45,7 +44,6 @@
         width: 40%;
         text-align: right; /* Aligns expiration dates to the right */
     }
-}
 .button-container {
     display: flex;
     justify-content: space-between;
