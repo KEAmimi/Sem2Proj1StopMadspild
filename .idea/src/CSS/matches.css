@@ -1,0 +1,55 @@
+:root {
+}
+
+.match {
+    position: absolute;
+    margin-top: 30px;
+    top: 10vh;
+    left: 30vh;
+    padding: 20px;
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 35px;
+        line-height: 150%;
+    }
+
+}
+
+.match::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(var(--red),var(--darkGreen));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    border-radius: 25px 25px 0 0  ;
+    min-height: 100vh;
+}
+
+.shoppingList {
+    position: absolute;
+    margin-top: 30px;
+    top: 10vh;
+    right: 30vh;
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    p{
+        text-align: center;
+        font-size: 35px;
+        line-height: 150%;
+    }
+}

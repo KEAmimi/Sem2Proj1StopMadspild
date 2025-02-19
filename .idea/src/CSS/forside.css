@@ -19,12 +19,9 @@ html body {
 }
 
 body {
-    background-color: var(--lightGreen);
-    background-image: url("../Images/becca-tapert-O7sK3d3TPWQ-unsplash.jpg");
+    background-image: url("../img/becca-tapert-O7sK3d3TPWQ-unsplash.jpg");
     background-position: bottom center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 /* The login box */
@@ -90,14 +87,11 @@ p {
     /* Only applies to the top corners */
     border-radius: 15px 15px 0 0;
     width: auto;
-    min-height: 100vh;
 
     font-size: 45px;
     line-height: 1.2;
 
     padding: 20px;
-
-    transition: box-shadow 0.3s ease;
 }
 
 p::before {
@@ -105,9 +99,9 @@ p::before {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 375px;
-    height: 100vh;
-    border-radius: 15px;
+    bottom: 0;
+    top: -200px;
+    border-radius: 0 0 15px 15px;
     background-color: var(--red);
     opacity: 50%;
     z-index: -1;
@@ -129,8 +123,8 @@ p::before {
     background-color: #e4a278;
 }
 
-/* When viewport becomes 1200px or smaller i width the following applies */
-@media (max-width: 1400px){
+/* When viewport becomes 1200px or smaller in width the following applies */
+@media (max-width: 1225px){
     p {
         left: calc(100vw - 1100px);
     }
