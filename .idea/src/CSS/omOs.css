@@ -10,7 +10,7 @@
     top: 0px;
 }
 
-.omOs {
+.bokse {
     background-color: white;
     color: black;
     font-size: larger;
@@ -21,20 +21,15 @@
     padding: 1%;
     align-items: center;
     text-align: center;
+
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, .4);
 }
 
-.kontaktOs {
-    background-color: white;
-    color: black;
-    font-size: larger;
-    width: 35%;
-    height: 50%;
-    border-radius: 20px;
-    flex-direction: column;
-    padding: 1%;
-    align-items: center;
-    text-align: center;
+.kontakt {
+    text-align: left;
+    padding-left: 10px;
 }
+
 
 .slogan {
     font-weight: bolder;
