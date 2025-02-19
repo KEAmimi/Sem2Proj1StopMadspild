@@ -101,6 +101,8 @@ input {
 
     font-family: Arial;
     font-size: 25px;
+
+    transition: filter 0.3s;
 }
 
 input:hover {
