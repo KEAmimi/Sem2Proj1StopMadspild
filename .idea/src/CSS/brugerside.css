@@ -12,23 +12,21 @@
     padding-top: 20px;
 }
 .left {
-    left: 20px;
+    left: 90px;
     width: 500px;
     height: 450px;
     border-radius: 15px;
     background-color: var(--darkGreen);
     position: absolute;
-    right: 175px;
     top: 90px;
 }
 .right {
-    right: 0;
+    right: 90px;
     width: 500px;
     height: 450px;
     border-radius: 15px;
     background-color: rgb(092, 174, 099);
     position: absolute;
-    right: 175px;
     top: 90px;
 
     .koleskab-container {
@@ -48,6 +46,35 @@
         text-align: right; /* Aligns expiration dates to the right */
     }
 }
-.tilfoj {
-
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.tilfoj-knap {
+    background-color: #45a049;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tilfoj-knap:hover {
+    background-color: #F0FFF0FF;
+    color: black;
+}
+.slet-knap {
+    background-color: #E44D2EFF;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.slet-knap:hover {
+    background-color: #F0FFF0FF;
+    color: black;
 }
