@@ -1,7 +1,18 @@
 .omOs {
+    display: flex;
     position: absolute;
-    left: 100px;
-    top: 100px;
+    left: 2%; /*Placering fra venstre side*/
+    top: 10%; /*Placering fra toppen*/
     background-color: white;
     color: black;
+    font-size: larger;
+    width: 35%;
+    height: 50%;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 1%;
+}
+
+.slogan {
+    font-weight: bolder;
 }
