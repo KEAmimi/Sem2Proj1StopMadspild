@@ -2,32 +2,45 @@
 .infoBokse {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    height: 800px;
+    height: 700px;
     gap: 100px;
-    top: 0px;
+    top: 100px;
 }
 
 .bokse {
     background-color: white;
     color: black;
-    font-size: larger;
+    font-size: largervw;
     width: 35%;
     height: 50%;
     border-radius: 20px;
     flex-direction: column;
     padding: 1%;
-    align-items: center;
+    /*align-items: center;*/
     text-align: center;
 
     box-shadow: 10px 10px 30px rgba(0, 0, 0, .4);
 }
 
 .kontakt {
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 50%;
+    height: 100px;
+    border-radius: 20px;
+    padding: 1%;
+    align-items: center;
     text-align: left;
+    justify-content: center;
     padding-left: 10px;
+    margin-top: 20px;
+
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, .4);
+
 }
 
 
