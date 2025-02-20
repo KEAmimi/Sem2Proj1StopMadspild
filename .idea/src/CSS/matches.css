@@ -62,10 +62,11 @@ input {
     font-family: Arial;
     font-size: 25px;
 
-    transition: filter 0.3s;
+    transition: filter 0.5s, font-size 0.35s;
 }
 input:hover {
     filter: saturate(50%);
+    font-size: 30px;
 }
 
 .buttons {
