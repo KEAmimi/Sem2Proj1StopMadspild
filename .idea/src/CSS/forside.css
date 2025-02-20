@@ -18,6 +18,44 @@ body {
     background-size: cover;
 }
 
+/* Welcome text */
+.slogan {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+
+    position: relative;
+    left: 125px;
+    top: 0px;
+
+    width: 300px;
+    padding: 20px;
+    padding-bottom: 0;
+}
+.slogan::before {
+    content:"";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0; /* maybe -200 */
+    border-radius: 0 0 15px 15px;
+    background-color: var(--red);
+    opacity: 50%;
+    z-index: -1;
+}
+p {
+    position: relative;
+    text-align: center;
+    /* Only applies to the bottom corners */
+    border-radius: 0 0 15px 15px;
+
+    font-size: 45px;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+
 /* The login box */
 form {
     position: absolute;
@@ -34,9 +72,15 @@ form {
     padding: 25px;
 
     /* box-shadow fades in insted of being instantanious */
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.5s ease;
 }
 /* Before-pseudo element defines the box behind the text */
+form:hover {
+    box-shadow: 0 0 5px 0px var(--lightGreen);
+    #submit{
+        opacity: 100%;
+    }
+}
 form::before {
     content:"";
     position: absolute;
@@ -51,11 +95,13 @@ form::before {
     background-color: var(--darkGreen);
     opacity: 50%;
 
+    transition: opacity 0.5s ease;
+
     /* Places before element on layer -1 */
     z-index: -1;
 }
-form:hover {
-    box-shadow: 0 0 50px 0px var(--lightGreen);
+form:hover:before {
+    opacity: 65%;
 }
 
 /* Input fields */
@@ -73,34 +119,6 @@ input {
     color: black;
 }
 
-/* Welcome text */
-p {
-    position: absolute;
-    left: 125px;
-    top: 100px;
-
-    /* Only applies to the top corners */
-    border-radius: 15px 15px 0 0;
-    width: auto;
-
-    font-size: 45px;
-    line-height: 1.2;
-
-    padding: 20px;
-}
-p::before {
-    content:"";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: -200px;
-    border-radius: 0 0 15px 15px;
-    background-color: var(--red);
-    opacity: 50%;
-    z-index: -1;
-}
-
 #submit {
     border: none;
     background-color: var(--red);
@@ -110,7 +128,10 @@ p::before {
     top: 150px;
     padding: 5px 10px;
 
-    transition: filter 0.3s ease;
+    opacity: 50%;
+
+    transition: 0.5s ease;
+
 }
 #submit:hover {
     filter: saturate(50%);
@@ -130,9 +151,8 @@ p::before {
 }
 
 #logo {
-    position: absolute;
-    top: -110px;
-    left: 115px;
+    position: relative;
+    align-self: center;
 
     width: 100px;
     height: 100px;

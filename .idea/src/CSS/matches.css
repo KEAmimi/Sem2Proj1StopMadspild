@@ -81,7 +81,7 @@ input:hover {
 
 .shoppingList {
     position: absolute;
-    left: 245px;
+    right: -60px;
     text-align: center;
 
     transform: rotate(90deg);
@@ -90,6 +90,7 @@ input:hover {
     height: 350px;
     border-radius: 9px;
 
+    text-decoration: underline var(--red) 1px;
     font-size: 30px;
     font-weight: bold;
     color: var(--darkGreen);
@@ -134,7 +135,6 @@ input:hover {
     background-color: lightgoldenrodyellow;
     z-index: -4;
 }
-
 .shoppingList:hover {
     transform: translateX(280px)rotate(0deg);
 }
