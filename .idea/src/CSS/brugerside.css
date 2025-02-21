@@ -1,3 +1,7 @@
+:root {
+    color: var(--darkGreen);
+}
+
 /* BODY */
 body {
     display: flex;
@@ -35,17 +39,19 @@ body {
     border-radius: 15px;
     padding: 3vw;
     box-sizing: border-box; /* Gør, at padding og border inkluderes i bredde/højde */
+
+    box-shadow: 0 0 10px 0 var(--darkGreen);
 }
 
 /* VENSTRE DEL */
 .left {
-    background-color: var(--darkGreen); /* Bruger en variabel til dynamisk farvevalg */
+    background-color: var(--lightGreen); /* Bruger en variabel til dynamisk farvevalg */
     position: relative; /* Gør det muligt at placere børn (f.eks. pb-container) absolut inden i */
 }
 
 /* HØJRE DEL */
 .right {
-    background-color: rgb(92, 174, 99);
+    background-color: var(--lightGreen);
 }
 
 /* KØLESKAB-CONTAINER */
@@ -126,26 +132,42 @@ body {
 }
 
 /* PROFILBILLEDE-CONTAINER */
+
+.pbAndInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    p{
+        position: relative;
+        width: 50%;
+    }
+}
 .pb-container {
+    border: black solid 1px;
+
     position: absolute; /* Placerer containeren i forhold til .left */
     top: 0vw;
-    right: -8vw; /* Flytter containeren 8vw uden for .left til højre */
+    right: 0vw; /* Flytter containeren 8vw uden for .left til højre */
     width: 15vw;
     height: 15vw;
     display: flex;
-    padding-top: 3vw;
-    padding-right: 10vw; /* Skaber ekstra plads til højre for billedet */
+    padding: 5px;
     justify-content: center;
     align-items: center;
-
 }
 
 /* PROFILBILLEDE */
 #pb {
-    min-height: 50px;
-    min-width: 50px;
-    max-width: 200px;
-    max-height: 200px;
+    position: relative;
+    border: black solid 1px;
+
+    border-radius: 20px;
+
+    width: 50%;
+
+
     object-fit: cover; /* Sikrer, at billedet fylder containeren uden at forvrænge proportioner */
 }
 
@@ -155,4 +177,23 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.beskrivelse {
+    position: relative;
+    padding: 10px;
+    line-height: 1.2;
+}
+
+@media (max-width: 1000px) {
+    .pbAndInfo {
+        justify-content: left;
+        p{
+            width: 100%;
+        }
+    }
+    #pb {
+        position: absolute;
+        z-index: -10;
+    }
 }
