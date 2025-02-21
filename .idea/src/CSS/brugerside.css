@@ -1,6 +1,4 @@
-:root {
-    color: var(--darkGreen);
-}
+
 
 /* BODY */
 body {
@@ -45,12 +43,15 @@ body {
 
 /* VENSTRE DEL */
 .left {
+    color: var(--darkGreen);
     background-color: var(--lightGreen); /* Bruger en variabel til dynamisk farvevalg */
     position: relative; /* Gør det muligt at placere børn (f.eks. pb-container) absolut inden i */
 }
 
 /* HØJRE DEL */
 .right {
+    height: 100%;
+    color: var(--darkGreen);
     background-color: var(--lightGreen);
 }
 
@@ -88,17 +89,21 @@ body {
 
 /* TILFØJ-KNAP */
 .tilfoj-knap {
-    background-color: #45a049;
-    color: #FFFFFF;
+    background-color: var(--darkGreen);
+    color: var(--lightGreen);
     padding: 10px 15px;
-    font-size: 16px;
+
+    font-family: Arial;
+    font-size: 15px;
+
+    border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s; /* Skaber en glidende overgang for hover-effekter */
 }
 .tilfoj-knap:hover {
-    background-color: #F0FFF0FF;
-    color: black;
+    filter: saturate(50%);
+    font-size: 20px;
 }
 
 /* SLET-KNAP */
@@ -106,29 +111,37 @@ body {
     background-color: #E44D2EFF;
     color: white;
     padding: 10px 15px;
-    font-size: 16px;
+
+    font-family: Arial;
+    font-size: 15px;
+
     border-radius: 8px;
+    border: none;
     cursor: pointer;
     transition: 0.3s;
 }
 .slet-knap:hover {
-    background-color: #F0FFF0FF;
-    color: black;
+    filter: saturate(50%);
+    font-size: 20px;
 }
 
 /* REDIGER PROFIL-KNAP */
 .edit-profile-button {
     background-color: #008CBA;
-    color: white;
+    color: var(--lightGreen);
     padding: 10px 20px;
+
+    font-family: Arial;
     font-size: 16px;
+
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
 }
 .edit-profile-button:hover {
-    background-color: #005f7f;
+    filter: saturate(50%);
+    font-size: 20px;
 }
 
 /* PROFILBILLEDE-CONTAINER */
@@ -150,11 +163,9 @@ body {
     position: relative;
 
     border-radius: 20px;
-
     width: 50%;
-
-
     object-fit: cover; /* Sikrer, at billedet fylder containeren uden at forvrænge proportioner */
+    box-shadow: 0 0 5px 0 var(--darkGreen);
 }
 
 /* OVERSKRIFT-CONTAINER */
