@@ -41,12 +41,76 @@ body {
     box-shadow: 0 0 10px 0 var(--darkGreen);
 }
 
+/* TEKST I SPLIT */
+.split h1, .split h2, .split p {
+    margin: 0;
+}
+
+
 /* VENSTRE DEL */
 .left {
     color: var(--darkGreen);
     background-color: var(--lightGreen); /* Bruger en variabel til dynamisk farvevalg */
     position: relative; /* Gør det muligt at placere børn (f.eks. pb-container) absolut inden i */
 }
+
+/* OVERSKRIFT-CONTAINER */
+.Overskift-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* PROFILBILLEDE OG INFO*/
+.pbAndInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    p{
+        position: relative;
+        width: 50%;
+    }
+}
+
+/* PROFILBILLEDE */
+#pb {
+    position: relative;
+
+    border-radius: 20px;
+    width: 50%;
+    object-fit: cover; /* Sikrer, at billedet fylder containeren uden at forvrænge proportioner */
+    box-shadow: 0 0 5px 0 var(--darkGreen);
+}
+
+/* Beskrivelse */
+.beskrivelse {
+    position: relative;
+    padding: 10px;
+    line-height: 1.2;
+}
+
+/* REDIGER PROFIL-KNAP */
+.edit-profile-button {
+    background-color: #008CBA;
+    color: var(--lightGreen);
+    padding: 10px 20px;
+
+    font-family: Arial;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.edit-profile-button:hover {
+    filter: saturate(50%);
+    font-size: 20px;
+}
+
 
 /* HØJRE DEL */
 .right {
@@ -55,22 +119,17 @@ body {
     background-color: var(--lightGreen);
 }
 
+/* VARE-KOLONNE */
+.vare-column {
+    width: 60%;
+}
+
 /* KØLESKAB-CONTAINER */
 .koleskab-container {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
     gap: 20px;
-}
-
-/* TEKST I SPLIT */
-.split h1, .split h2, .split p {
-    margin: 0;
-}
-
-/* VARE-KOLONNE */
-.vare-column {
-    width: 60%;
 }
 
 /* UDLØBSDATO-KOLONNE */
@@ -125,62 +184,8 @@ body {
     font-size: 20px;
 }
 
-/* REDIGER PROFIL-KNAP */
-.edit-profile-button {
-    background-color: #008CBA;
-    color: var(--lightGreen);
-    padding: 10px 20px;
 
-    font-family: Arial;
-    font-size: 16px;
 
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.edit-profile-button:hover {
-    filter: saturate(50%);
-    font-size: 20px;
-}
-
-/* PROFILBILLEDE-CONTAINER */
-
-.pbAndInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    p{
-        position: relative;
-        width: 50%;
-    }
-}
-
-/* PROFILBILLEDE */
-#pb {
-    position: relative;
-
-    border-radius: 20px;
-    width: 50%;
-    object-fit: cover; /* Sikrer, at billedet fylder containeren uden at forvrænge proportioner */
-    box-shadow: 0 0 5px 0 var(--darkGreen);
-}
-
-/* OVERSKRIFT-CONTAINER */
-.Overskift-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.beskrivelse {
-    position: relative;
-    padding: 10px;
-    line-height: 1.2;
-}
 
 @media (max-width: 1000px) {
     .pbAndInfo {
