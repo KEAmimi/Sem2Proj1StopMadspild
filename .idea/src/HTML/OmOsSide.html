@@ -60,10 +60,27 @@
 </div>
 
 <div class="kontakt">
-    <p>Navn: <input type="text"><br>
-        Email: <input type="text"><br>
-        Emne: <input type="text"></p>
-    <textarea cols="40" rows="4" placeholder="Skriv din tekst her."></textarea>
+    <h1>Kontaktformular</h1>
+    <form>
+        <div class="smallInput">
+       <div class="form-group">
+        <label for="navn">Navn:</label>
+        <input type="text" id="navn">
+       </div>
+        <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+        </div>
+        <div class="form-group">
+        <label for="emne">Emne:</label>
+        <input type="text" id="emne">
+        </div>
+        </div>
+        <div class="bigInput">
+        <textarea cols="40" rows="6" placeholder="Skriv din tekst her."></textarea>
+        </div>
+    </form>
+    <input type="submit" value="Submit">
 </div>
 </div>
 
