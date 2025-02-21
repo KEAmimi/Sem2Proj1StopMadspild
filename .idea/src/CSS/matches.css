@@ -95,10 +95,10 @@ input:hover {
     height: 350px;
     border-radius: 9px;
 
-    text-decoration: underline var(--red) 1px;
+    font-family: "Comic Sans MS";
     font-size: 30px;
     font-weight: bold;
-    color: var(--darkGreen);
+    color: #284283;
 
     padding: 30px;
 
