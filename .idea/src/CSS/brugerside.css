@@ -144,24 +144,10 @@ body {
         width: 50%;
     }
 }
-.pb-container {
-    border: black solid 1px;
-
-    position: absolute; /* Placerer containeren i forhold til .left */
-    top: 0vw;
-    right: 0vw; /* Flytter containeren 8vw uden for .left til højre */
-    width: 15vw;
-    height: 15vw;
-    display: flex;
-    padding: 5px;
-    justify-content: center;
-    align-items: center;
-}
 
 /* PROFILBILLEDE */
 #pb {
     position: relative;
-    border: black solid 1px;
 
     border-radius: 20px;
 
