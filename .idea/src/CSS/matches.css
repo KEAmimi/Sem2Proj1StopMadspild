@@ -4,12 +4,14 @@
 }
 
 .match {
+    /* .match is the container - elements inside seek to be centered */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     position: relative;
+    /* Margin to neglect header */
     margin-top: 30px;
     top: 15vh;
     width: 500px;
@@ -40,14 +42,14 @@
     left: 0;
 
     background-color: var(--lightGreen);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+
     z-index: -1;
     border-radius: 25px;
 
     box-shadow: 0 0 10px 0 var(--darkGreen);
 }
 
+/* "Bekræft" and "afvis" */
 input {
     position: relative;
     width: 150px;
@@ -69,6 +71,7 @@ input:hover {
     font-size: 30px;
 }
 
+/* Treat buttons as one line */
 .buttons {
     display: flex;
     gap: 40px;
@@ -85,6 +88,7 @@ input:hover {
     right: -60px;
     text-align: center;
 
+    /* Turns it 90 degrees */
     transform: rotate(90deg);
 
     width: 300px;
@@ -117,9 +121,12 @@ input:hover {
     left: 0;
     right: 0;
     border-radius: 9px;
+
+    /* Crumbled paper as background */
     background-image: url("../Images/paperTexture.jpg");
     background-size: cover;
 
+    /* Img transparent as it was hard to read the text, sepia cause it looks good */
     filter: opacity(50%) sepia(20%);
 
     z-index: -3;
@@ -137,5 +144,6 @@ input:hover {
     z-index: -4;
 }
 .shoppingList:hover {
+    /* Moves element to the right and rotates it */
     transform: translateX(280px)rotate(0deg);
 }
