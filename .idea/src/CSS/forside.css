@@ -18,21 +18,24 @@ body {
     background-size: cover;
 }
 
-/* Welcome text */
+/* Slogan text */
 .slogan {
+    /* Elements inside slogan are added from top to bottom */
     display: flex;
     justify-content: center;
     flex-direction: column;
-    /* border: 1px solid black; */
 
+    /* Placement */
     position: relative;
     left: 125px;
     top: 0px;
 
+    /* Size */
     width: 300px;
     padding: 20px;
     padding-bottom: 0;
 }
+/* Box around slogan */
 .slogan::before {
     content:"";
     position: absolute;
@@ -54,10 +57,12 @@ body {
  }
 p {
     position: relative;
-    text-align: center;
+
     /* Only applies to the bottom corners */
     border-radius: 0 0 15px 15px;
 
+    /* Regarding text */
+    text-align: center;
     font-size: 45px;
     font-weight: bolder;
     line-height: 1.2;
@@ -81,9 +86,10 @@ form {
     /* box-shadow fades in insted of being instantanious */
     transition: box-shadow 0.5s ease;
 }
-/* Before-pseudo element defines the box behind the text */
 form:hover {
     box-shadow: 0 0 5px 0px var(--lightGreen);
+
+    /* Hovering the box should change the login button */
     #submit{
         opacity: 100%;
     }
@@ -102,6 +108,7 @@ form::before {
     background-color: var(--darkGreen);
     opacity: 50%;
 
+    /* Time for opacity to change when hovering */
     transition: opacity 0.5s ease;
 
     /* Places before element on layer -1 */
