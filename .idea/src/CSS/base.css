@@ -154,7 +154,7 @@ body {
 
 footer{
     height: 250px;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: -250px;
     background-color: var(--darkGreen);
@@ -206,6 +206,7 @@ footer{
 }
 
 .followUsOnline{
+    width: 20vw;
     padding-left: 10vh;
 }
 
@@ -226,6 +227,7 @@ footer{
 
 .copyRightNotice{
     position: relative;
+    width: 15vw;
     left: 5vw;
     top: 25%;
 }
