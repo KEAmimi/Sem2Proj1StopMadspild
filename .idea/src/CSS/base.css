@@ -27,7 +27,7 @@ body {
     position: fixed; /* The header stays in place*/
     top: 0; /* The header is placed in the top */
     width: 100%; /* The header goes all the way from left to right */
-    z-index: 2;
+    z-index: 5;
     margin: 0;
 }
 
@@ -67,7 +67,7 @@ body {
     justify-content: center;
     box-shadow: inset 0 0 0 2px white; /*This is the internal border on the button, do not be confused by the shadow property*/
     top: 47px;
-    z-index: 3;
+    z-index: 6;
     cursor: pointer;
     font-weight: 900;
     font-size: 20px;
@@ -139,19 +139,6 @@ body {
     top: 60px;
 }
 
-/*
-.header::after{
-    content:"";
-    background-color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    position: absolute;
-    top: 46px;
-}
-*/
-
-
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
     .header a {
@@ -164,3 +151,82 @@ body {
         float: none;
     }
 }
+
+footer{
+    height: 250px;
+    position: absolute;
+    width: 100%;
+    bottom: -250px;
+    background-color: var(--darkGreen);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.centerLists{
+    position: relative;
+    top: 20px;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    gap: 0;
+    padding: 20px;
+    margin: 0;
+
+    line-height: 22px;
+}
+
+.contactInfo{
+    margin-bottom: 10px;
+    width: 30vw;
+}
+
+.centerTitle{
+    font-size: large;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.otherUsefulSites{
+    margin-bottom: 10px;
+    line-height: 20px;
+    width: 30vw;
+}
+
+.centerLists a{
+    all: unset;
+    color: white;
+    cursor: pointer;
+}
+
+.centerLists a:hover{
+    text-decoration: underline;
+}
+
+.followUsOnline{
+    padding-left: 10vh;
+}
+
+#kittyLink:hover{
+    color: pink;
+    font-size: larger;
+    font-weight: 900;
+    transition: .2s;
+}
+
+.legalElements{
+    background-color: darkgreen;
+    width: 100%;
+    height: 40px;
+    position: relative;
+    top: 20px;
+}
+
+.copyRightNotice{
+    position: relative;
+    left: 5vw;
+    top: 25%;
+}
+
