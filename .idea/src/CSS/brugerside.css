@@ -1,19 +1,23 @@
+/* BODY */
 body {
     display: flex;
     justify-content: center;
     margin: 0;
     height: 100vh;
 }
+
+/* CONTAINER */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 97vw;
-    height: 100vw;
+    height: 100vh; /* Ændret til vh for at matche viewportens højde */
     margin-top: 80px;
     gap: 20px;
 }
 
+/* SPLIT (GENERELT) */
 .split {
     display: flex;
     flex-direction: column; /* Sørger for, at indhold stables vertikalt */
@@ -21,46 +25,53 @@ body {
     min-height: 80vh;
     border-radius: 15px;
     padding: 3vw;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Gør, at padding og border inkluderes i bredde/højde */
 }
-.left {
-    background-color: var(--darkGreen);
-    position: relative;
 
+/* VENSTRE DEL */
+.left {
+    background-color: var(--darkGreen); /* Bruger en variabel til dynamisk farvevalg */
+    position: relative; /* Gør det muligt at placere børn (f.eks. pb-container) absolut inden i */
 }
+
+/* HØJRE DEL */
 .right {
     background-color: rgb(92, 174, 99);
 }
-.splt.left{
-    position: relative;
+
+/* KØLESKAB-CONTAINER */
+.koleskab-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 20px;
 }
 
-    .koleskab-container {
-        display: flex;
-        justify-content: space-between; /* Ensures columns are separated */
-        padding: 10px 20px;
-        gap: 20px;
-    }
+/* TEKST I SPLIT */
 .split h1, .split h2, .split p {
     margin: 0;
 }
 
-    /* Style for the Vare (Items) column */
-    .vare-column {
-        width: 60%; /* Adjust width to fit content */
-    }
+/* VARE-KOLONNE */
+.vare-column {
+    width: 60%;
+}
 
-    /* Style for the Expiration Date column */
-    .udlobsdato-column {
-        width: 40%;
-        text-align: right; /* Aligns expiration dates to the right */
-    }
+/* UDLØBSDATO-KOLONNE */
+.udlobsdato-column {
+    width: 40%;
+    text-align: right;
+}
+
+/* KNAPPER-CONTAINER */
 .button-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
     padding: 0 20px;
 }
+
+/* TILFØJ-KNAP */
 .tilfoj-knap {
     background-color: #45a049;
     color: #FFFFFF;
@@ -68,12 +79,14 @@ body {
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s; /* Skaber en glidende overgang for hover-effekter */
 }
 .tilfoj-knap:hover {
     background-color: #F0FFF0FF;
     color: black;
 }
+
+/* SLET-KNAP */
 .slet-knap {
     background-color: #E44D2EFF;
     color: white;
@@ -87,6 +100,8 @@ body {
     background-color: #F0FFF0FF;
     color: black;
 }
+
+/* REDIGER PROFIL-KNAP */
 .edit-profile-button {
     background-color: #008CBA;
     color: white;
@@ -100,26 +115,32 @@ body {
 .edit-profile-button:hover {
     background-color: #005f7f;
 }
-.pb-container{
-    position: absolute;
+
+/* PROFILBILLEDE-CONTAINER */
+.pb-container {
+    position: absolute; /* Placerer containeren i forhold til .left */
     top: 0vw;
-    right: -8vw;
-     width: 15vw;
-     height: 15vw;
+    right: -8vw; /* Flytter containeren 8vw uden for .left til højre */
+    width: 15vw;
+    height: 15vw;
     display: flex;
     padding-top: 3vw;
-    padding-right: 10vw;
+    padding-right: 10vw; /* Skaber ekstra plads til højre for billedet */
     justify-content: center;
     align-items: center;
- }
-#pb{
+}
+
+/* PROFILBILLEDE */
+#pb {
     min-height: 50px;
     min-width: 50px;
     max-width: 200px;
     max-height: 200px;
-    object-fit: cover;
+    object-fit: cover; /* Sikrer, at billedet fylder containeren uden at forvrænge proportioner */
 }
-Overskift-container{
+
+/* OVERSKRIFT-CONTAINER */
+.Overskift-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
